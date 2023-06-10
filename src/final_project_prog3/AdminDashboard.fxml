@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: wihte;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.AccountsManagmentController">
+   <children>
+      <Button fx:id="buttonCreateNewPatient" layoutX="78.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonCreateNewPatientAction" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: blue; -fx-text-fill: white;" styleClass="createBtn" stylesheets="@../../css/admin.css" text="+ Create new Patient">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonShowAllPatient" layoutX="78.0" layoutY="153.0" mnemonicParsing="false" onAction="#buttonShowAllPatientAction" prefHeight="50.0" prefWidth="187.0" style="-fx-background-color: #2a2a82; -fx-text-fill: white;" styleClass="showAllBtn" stylesheets="@../../css/admin.css" text="Show All Patient">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldPatientSearch" layoutX="709.0" layoutY="153.0" prefHeight="50.0" prefWidth="331.0" promptText="Account number" style="-fx-background-color: #e8e8e8; -fx-border-color: #cdcdcd;" styleClass="textField" stylesheets="@../../css/admin.css" />
+      <Button fx:id="buttonSearchPatient" layoutX="1040.0" layoutY="153.0" mnemonicParsing="false" onAction="#buttonSearchPatientAction" prefHeight="50.0" prefWidth="74.0" style="-fx-background-color: #ffd700; -fx-text-fill: ;" styleClass="showAllBtn" stylesheets="@../../css/admin.css" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView layoutX="78.0" layoutY="235.0" prefHeight="411.0" prefWidth="1036.0">
+         <columns>
+            <TableColumn prefWidth="44.0" text="Id" />
+            <TableColumn prefWidth="130.0" text="Account number" />
+            <TableColumn prefWidth="125.0" text="User Name" />
+            <TableColumn prefWidth="74.0" text="Currency" />
+            <TableColumn prefWidth="87.0" text="Balance" />
+         </columns>
+      </TableView>
+      <Button fx:id="buutonUpdateSelectedPatientn" layoutX="78.0" layoutY="663.0" mnemonicParsing="false" onAction="#buutonUpdateSelectedPatientnAction" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: blue; -fx-text-fill: white;" styleClass="updateBtn" stylesheets="@../../css/admin.css" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDeleteSelectedPatient" layoutX="222.0" layoutY="663.0" mnemonicParsing="false" onAction="#buttonDeleteSelectedPatientAction" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: red; -fx-text-fill: white;" styleClass="deleteBtn" stylesheets="@../../css/admin.css" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelAdminDashbord" prefHeight="58.0" prefWidth="1200.0" style="-fx-background-color: Black; -fx-alignment: center; -fx-text-fill: white;" text="Admin Dashboard ">
+         <font>
+            <Font name="Calisto MT Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
