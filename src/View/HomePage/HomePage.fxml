@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePage.HomePageController">
+   <children>
+      <Label prefHeight="21.0" prefWidth="508.0" style="-fx-background-color: linear-gradient(to left ,#FFEDB3 , #FF5E00);" />
+      <Label layoutY="690.0" prefHeight="21.0" prefWidth="508.0" style="-fx-background-color: linear-gradient(to right, #FFEDB3 , #FF5E00);" />
+      <Label layoutY="21.0" prefHeight="671.0" prefWidth="21.0" style="-fx-background-color: linear-gradient(to top , #FFEDB3 , #FF5E00);" />
+      <Label layoutX="487.0" layoutY="19.0" prefHeight="671.0" prefWidth="21.0" style="-fx-background-color: linear-gradient(to bottom ,#FFEDB3 , #FF5E00);" />
+      <Label fx:id="labelLogin" layoutX="188.0" layoutY="178.0" text="Login">
+         <font>
+            <Font name="Calisto MT" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonLoginAdmin" layoutX="146.0" layoutY="346.0" mnemonicParsing="false" onAction="#buttonAdminAction" prefHeight="56.0" prefWidth="210.0" style="-fx-background-color: linear-gradient(to left , #FFEDB3 , #FF5E00);" text="Admin">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Button>
+      <Button fx:id="buttonLoginUser" layoutX="146.0" layoutY="440.0" mnemonicParsing="false" onAction="#buttonUserAction" prefHeight="56.0" prefWidth="210.0" style="-fx-background-color: linear-gradient(to left , #FFEDB3 , #FF5E00);" text="User ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Button>
+      <Button fx:id="buttonCancel" layoutX="145.0" layoutY="584.0" mnemonicParsing="false" onAction="#buttonCancelAction" prefHeight="56.0" prefWidth="210.0" style="-fx-background-color: linear-gradient(to left , #FF0000, #FFA500); -fx-text-fill: white;" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageLogo" fitHeight="110.0" fitWidth="500.0" layoutX="137.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Screenshot%202023-05-26%20114416.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelChooseLogin" layoutX="147.0" layoutY="250.0" style="-fx-text-fill: #b6b5b5;" text="choose login Admin or User">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -3,16 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Controller/Admin/AccountsManagmentController.java</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/PatientDashboardController.java</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/AdminDashboardController.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Model/UsersJpaController.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Controller/Admin/AdminDashboardPatientsController.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Model/DBConnection.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Controller/Admin/RegisterPatientFormAdminController.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Controller/Patient/RegisterPatientController.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Model/Users.java</file>
+            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/Controller/Patient/UpdatePatientController.java</file>
             <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/Final_Project_Prog3.java</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/RegisterPage.fxml</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/LoginPatientController.java</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/HomePage.fxml</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/AdminDashboard.fxml</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/PatientDashboard.fxml</file>
-            <file>file:/C:/NetBeansProjects/Final_Project_Prog3/src/final_project_prog3/RegisterPageController.java</file>
         </group>
     </open-files>
 </project-private>

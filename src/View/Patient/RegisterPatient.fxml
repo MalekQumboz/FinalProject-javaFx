@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Patient.RegisterPatientController">
+   <children>
+      <Label fx:id="labelTitelCreatPatient" layoutY="-2.0" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: black; -fx-alignment: center;" text="EVENT REGISTRATION FORM" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName" layoutX="67.0" layoutY="112.0" text="Name:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAge" layoutX="71.0" layoutY="201.0" text="Age:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEmail" layoutX="73.0" layoutY="339.0" text="Email:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPhone" layoutX="71.0" layoutY="268.0" text="Phone:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelGender" layoutX="70.0" layoutY="412.0" text="Gendebr:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelRole" layoutX="67.0" layoutY="463.0" text="Role:">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPassword" layoutX="61.0" layoutY="589.0" text="Password :">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUserName" layoutX="62.0" layoutY="523.0" text="UserName :">
+         <font>
+            <Font name="Calisto MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldLastName" layoutX="677.0" layoutY="107.0" prefHeight="46.0" prefWidth="397.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <TextField fx:id="textFieldFirstName" layoutX="211.0" layoutY="107.0" prefHeight="46.0" prefWidth="397.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <Label fx:id="labelFirstName" layoutX="211.0" layoutY="158.0" style="-fx-text-fill: #808080;" text="First Name ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLastName" layoutX="677.0" layoutY="158.0" style="-fx-text-fill: #808080;" text="Last Name ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldPhone" layoutX="211.0" layoutY="263.0" prefHeight="46.0" prefWidth="863.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <TextField fx:id="textFieldAge" layoutX="211.0" layoutY="196.0" prefHeight="46.0" prefWidth="863.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <TextField fx:id="textFieldEmail" layoutX="211.0" layoutY="334.0" prefHeight="46.0" prefWidth="863.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <Button fx:id="buttonRegister" layoutX="58.0" layoutY="660.0" mnemonicParsing="false" onAction="#buttonRegisterAction" prefHeight="48.0" prefWidth="126.0" style="-fx-background-color: black; -fx-text-fill: white;" text="REGISTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldUserName" layoutX="211.0" layoutY="518.0" prefHeight="46.0" prefWidth="863.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0; -fx-font-size: 18;" />
+      <PasswordField fx:id="PasswordField" layoutX="211.0" layoutY="584.0" prefHeight="46.0" prefWidth="863.0" style="-fx-background-color: #ededed; -fx-border-color: #d0d0d0;" />
+      <RadioButton fx:id="genderFemal" layoutX="211.0" layoutY="407.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="179.0" style="-fx-text-fill: #808080;" text="Female">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroupGender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="genderMale" layoutX="440.0" layoutY="407.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="179.0" style="-fx-text-fill: #808080;" text="Male" toggleGroup="$ToggleGroupGender">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="roleAdmin" layoutX="211.0" layoutY="458.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="179.0" style="-fx-text-fill: #808080;" text="Admin">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroupRole" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rolePatient" layoutX="440.0" layoutY="458.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="179.0" style="-fx-text-fill: #808080;" text="Patient" toggleGroup="$ToggleGroupRole">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="buttonCancel" layoutX="229.0" layoutY="660.0" mnemonicParsing="false" onAction="#buttonCancelAction" prefHeight="48.0" prefWidth="126.0" style="-fx-background-color: red; -fx-text-fill: white;" text="CANCEL">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

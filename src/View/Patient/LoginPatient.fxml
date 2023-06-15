@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Patient.LoginPatientController">
+   <children>
+      <Label fx:id="labelLoginPatient" layoutX="786.0" layoutY="135.0" text="Login Patient">
+         <font>
+            <Font name="Calisto MT" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonLogin" layoutX="850.0" layoutY="501.0" mnemonicParsing="false" onAction="#buttonLoginAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: linear-gradient(to left , #FFEDB3 , #FF5E00); -fx-text-fill: black;" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Button>
+      <Button fx:id="buttonCancel" layoutX="850.0" layoutY="664.0" mnemonicParsing="false" onAction="#buttonCancelAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: linear-gradient(to left , #FF0000, #FFA500); -fx-text-fill: white;" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageLogo" fitHeight="110.0" fitWidth="500.0" layoutX="823.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Screenshot%202023-05-26%20114416.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitel" layoutX="846.0" layoutY="195.0" style="-fx-text-fill: #b6b5b5;" text="Sign In to your account">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUserName" layoutX="776.0" layoutY="257.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPassword" layoutX="776.0" layoutY="375.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUserName" layoutX="776.0" layoutY="304.0" prefHeight="44.0" prefWidth="321.0" style="-fx-font-size: 18;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="776.0" layoutY="416.0" prefHeight="44.0" prefWidth="321.0" />
+      <Button fx:id="buttonRegister" layoutX="850.0" layoutY="572.0" mnemonicParsing="false" onAction="#buttonRegisterAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: linear-gradient(to left , #FFEDB3 , #FF5E00); -fx-text-fill: black;" text="Register ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="PatientImage" fitHeight="757.0" fitWidth="744.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Patient_image.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>
